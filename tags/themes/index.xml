@@ -5,11 +5,20 @@
     <link>http://chausie.github.io/tags/themes/</link>
     <description>Recent content in themes on Chausie</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://chausie.github.io/tags/themes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>第一篇博客</title>
+      <link>http://chausie.github.io/post/blog/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://chausie.github.io/post/blog/</guid>
+      <description> hello world #include &amp;lt;iostream&amp;gt; using namespace std; int main(){ cout&amp;lt;&amp;lt;&amp;quot;hello world!&amp;quot;&amp;lt;&amp;lt;endl; return 0; }  </description>
+    </item>
     
     <item>
       <title>Creating a New Theme</title>

@@ -5,8 +5,8 @@
     <link>http://chausie.github.io/tags/</link>
     <description>Recent content in Tags on Chausie</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://chausie.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>hugo</title>
       <link>http://chausie.github.io/tags/hugo/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>http://chausie.github.io/tags/hugo/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>themes</title>
       <link>http://chausie.github.io/tags/themes/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>http://chausie.github.io/tags/themes/</guid>
       <description></description>
