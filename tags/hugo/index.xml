@@ -2,57 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on Chausie</title>
-    <link>http://chausie.github.io/tags/hugo/</link>
+    <link>https://chausie.github.io/tags/hugo/</link>
     <description>Recent content in hugo on Chausie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://chausie.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chausie.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>第一篇博客</title>
-      <link>http://chausie.github.io/post/blog/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://chausie.github.io/post/blog/</guid>
-      <description> hello world #include &amp;lt;iostream&amp;gt; using namespace std; int main(){ cout&amp;lt;&amp;lt;&amp;quot;hello world!&amp;quot;&amp;lt;&amp;lt;endl; return 0; }  </description>
-    </item>
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>http://chausie.github.io/post/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>Hugo&#43;GitHub Pages搭建远端博客</title>
+      <link>https://chausie.github.io/post/hugo&#43;github-page%E6%90%AD%E5%BB%BA%E8%BF%9C%E7%AB%AF%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://chausie.github.io/post/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>http://chausie.github.io/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://chausie.github.io/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>http://chausie.github.io/post/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://chausie.github.io/post/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+      <guid>https://chausie.github.io/post/hugo&#43;github-page%E6%90%AD%E5%BB%BA%E8%BF%9C%E7%AB%AF%E5%8D%9A%E5%AE%A2/</guid>
+      <description>一、Hugo安装、使用与配置 Hugo安装  下载并解压， Hugo（仅列举Windows） 我使用的版本是hugo_extended_0.55.6_Windows-64bit.zip。 解压后，还需再配置环境变量，在PATH中添加hugo.exe的路径,如：D:\hugo\ win+r输入cmd打开命令行提示符，输入并检验：  $hugo version Hugo使用 一、 生成站点：使用Hugo快速生成站点，比如希望生成到 /path/路径：,创建文件夹名myblog的博客网站
+$hugo new site /path/myblog  站点目录：网站根目录
+· archetypes/ 内容类型，在创建新内容是自动生成内容的配置，存放default.md · data/ 存放自定义模版，导入的toml文件（或json，yaml） · content/ 网站内容，使用markdown格式 · layouts/ 网站的模板，决定内容如何呈现 · static/ 存放css，js，fonts，media等，觉得网站外观 config.toml 包括baseurl, title, copyright等等网站参数。 二、 创建文章: 创建第一篇文章，放到 post 目录，方便之后生成聚合页面。
+$cd /path/ $hugo new post/first.md Hugo配置 一、 安装主题：没有主题是不行的。 到主题库挑一个心仪的主题，这里选择Hyde 创建themes目录
+$cd themes $git clone https://github.com/spf13/hyde.git 二、 运行Hugo：
+hugo server --theme=hyde --buildDrafts 浏览器里访问:http://localhost:1313
+二、部署到远端 前提：主机已经安装好git并有GitHub账号。你需要部署在 GitHub Pages 上，首先在GitHub上创建一个Repository，命名为：username.</description>
     </item>
     
   </channel>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8" />
+
+  
+  <title>Hugo&#43;GitHub Pages搭建远端博客</title>
+
+  
+  
+  <link href="//cdn.jsdelivr.net" rel="dns-prefetch">
+  <link href="//cdnjs.cloudflare.com" rel="dns-prefetch">
+  
+  <link href="//at.alicdn.com" rel="dns-prefetch">
+  
+  <link href="//fonts.googleapis.com" rel="dns-prefetch">
+  <link href="//fonts.gstatic.com" rel="dns-prefetch">
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  <meta name="description" content="一、Hugo安装、使用与配置 Hugo安装  下载并解压， Hugo（仅列举Windows） 我使用的版本是hugo_extended_0.55.6_Windows-64bit.zip。 解压后，还需再配置环境变量，在PATH中添加hugo.exe的路径,如：D:\hugo\ win&#43;r输入cmd打开命令行提示符，输入并检验：  $hugo version Hugo使用 一、 生成站点：使用Hugo快速生成站点，比如希望生成到 /path/路径：,创建文件夹名myblog的博客网站
+$hugo new site /path/myblog  站点目录：网站根目录
+· archetypes/ 内容类型，在创建新内容是自动生成内容的配置，存放default.md · data/ 存放自定义模版，导入的toml文件（或json，yaml） · content/ 网站内容，使用markdown格式 · layouts/ 网站的模板，决定内容如何呈现 · static/ 存放css，js，fonts，media等，觉得网站外观 config.toml 包括baseurl, title, copyright等等网站参数。 二、 创建文章: 创建第一篇文章，放到 post 目录，方便之后生成聚合页面。
+$cd /path/ $hugo new post/first.md Hugo配置 一、 安装主题：没有主题是不行的。 到主题库挑一个心仪的主题，这里选择Hyde 创建themes目录
+$cd themes $git clone https://github.com/spf13/hyde.git 二、 运行Hugo：
+hugo server --theme=hyde --buildDrafts 浏览器里访问:http://localhost:1313
+二、部署到远端 前提：主机已经安装好git并有GitHub账号。你需要部署在 GitHub Pages 上，首先在GitHub上创建一个Repository，命名为：username.">
+
+  
+  
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@gohugoio">
+    <meta name="twitter:title" content="Hugo&#43;GitHub Pages搭建远端博客">
+    <meta name="twitter:description" content="一、Hugo安装、使用与配置 Hugo安装  下载并解压， Hugo（仅列举Windows） 我使用的版本是hugo_extended_0.55.6_Windows-64bit.zip。 解压后，还需再配置环境变量，在PATH中添加hugo.exe的路径,如：D:\hugo\ win&#43;r输入cmd打开命令行提示符，输入并检验：  $hugo version Hugo使用 一、 生成站点：使用Hugo快速生成站点，比如希望生成到 /path/路径：,创建文件夹名myblog的博客网站
+$hugo new site /path/myblog  站点目录：网站根目录
+· archetypes/ 内容类型，在创建新内容是自动生成内容的配置，存放default.md · data/ 存放自定义模版，导入的toml文件（或json，yaml） · content/ 网站内容，使用markdown格式 · layouts/ 网站的模板，决定内容如何呈现 · static/ 存放css，js，fonts，media等，觉得网站外观 config.toml 包括baseurl, title, copyright等等网站参数。 二、 创建文章: 创建第一篇文章，放到 post 目录，方便之后生成聚合页面。
+$cd /path/ $hugo new post/first.md Hugo配置 一、 安装主题：没有主题是不行的。 到主题库挑一个心仪的主题，这里选择Hyde 创建themes目录
+$cd themes $git clone https://github.com/spf13/hyde.git 二、 运行Hugo：
+hugo server --theme=hyde --buildDrafts 浏览器里访问:http://localhost:1313
+二、部署到远端 前提：主机已经安装好git并有GitHub账号。你需要部署在 GitHub Pages 上，首先在GitHub上创建一个Repository，命名为：username.">
+    <meta name="twitter:image" content="/images/avatar.png">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Hugo&#43;GitHub Pages搭建远端博客">
+  <meta property="og:description" content="一、Hugo安装、使用与配置 Hugo安装  下载并解压， Hugo（仅列举Windows） 我使用的版本是hugo_extended_0.55.6_Windows-64bit.zip。 解压后，还需再配置环境变量，在PATH中添加hugo.exe的路径,如：D:\hugo\ win&#43;r输入cmd打开命令行提示符，输入并检验：  $hugo version Hugo使用 一、 生成站点：使用Hugo快速生成站点，比如希望生成到 /path/路径：,创建文件夹名myblog的博客网站
+$hugo new site /path/myblog  站点目录：网站根目录
+· archetypes/ 内容类型，在创建新内容是自动生成内容的配置，存放default.md · data/ 存放自定义模版，导入的toml文件（或json，yaml） · content/ 网站内容，使用markdown格式 · layouts/ 网站的模板，决定内容如何呈现 · static/ 存放css，js，fonts，media等，觉得网站外观 config.toml 包括baseurl, title, copyright等等网站参数。 二、 创建文章: 创建第一篇文章，放到 post 目录，方便之后生成聚合页面。
+$cd /path/ $hugo new post/first.md Hugo配置 一、 安装主题：没有主题是不行的。 到主题库挑一个心仪的主题，这里选择Hyde 创建themes目录
+$cd themes $git clone https://github.com/spf13/hyde.git 二、 运行Hugo：
+hugo server --theme=hyde --buildDrafts 浏览器里访问:http://localhost:1313
+二、部署到远端 前提：主机已经安装好git并有GitHub账号。你需要部署在 GitHub Pages 上，首先在GitHub上创建一个Repository，命名为：username.">
+  <meta property="og:url" content="https://chausie.github.io/post/hugo&#43;github-page%E6%90%AD%E5%BB%BA%E8%BF%9C%E7%AB%AF%E5%8D%9A%E5%AE%A2/">
+  <meta property="og:image" content="/images/avatar.png">
+
+
+
+
+<meta name="generator" content="Hugo 0.55.6">
+
+
+<link rel="canonical" href="https://chausie.github.io/post/hugo&#43;github-page%E6%90%AD%E5%BB%BA%E8%BF%9C%E7%AB%AF%E5%8D%9A%E5%AE%A2/">
+
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+
+
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="origin-when-cross-origin">
+
+
+
+
+
+
+
+<meta name="theme-color" content="#02b875">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Chausie">
+<meta name="msapplication-tooltip" content="Chausie">
+<meta name='msapplication-navbutton-color' content="#02b875">
+<meta name="msapplication-TileColor" content="#02b875">
+<meta name="msapplication-TileImage" content="/icons/icon-144x144.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png">
+<link rel="icon" sizes="192x192" href="/icons/icon-192x192.png">
+<link rel="apple-touch-icon" href="/icons/icon-152x152.png">
+<link rel="manifest" href="/manifest.json">
+
+
+<link rel="preload" href="/styles/main-rendered.min.css" as="style">
+
+
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Lobster" as="style">
+<link rel="preload" href="/images/avatar.png" as="image">
+<link rel="preload" href="/images/grey-prism.svg" as="image">
+
+
+<style>
+  body {
+    background: rgb(244, 243, 241) url('/images/grey-prism.svg') repeat fixed;
+  }
+</style>
+<link rel="stylesheet" href="/styles/main-rendered.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.2/dist/medium-zoom.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video-js.min.css">
+
+
+
+  
+  
+<!--[if lte IE 8]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/videojs-ie8@1.1.2/dist/videojs-ie8.min.js"></script>
+<![endif]-->
+
+<!--[if lte IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20180112/classList.min.js"></script>
+<![endif]-->
+
+
+</head>
+  <body>
+    <div class="suspension">
+      <a role="button" aria-label="Go to top" title="Go to top" class="to-top is-hide"><span class="icon icon-up" aria-hidden="true"></span></a>
+      
+        
+      
+    </div>
+    
+    
+  <header class="site-header">
+  <a href="https://chausie.github.io/"><img class="avatar" src="/images/avatar.png" alt="Avatar"></a>
+  
+  <h2 class="title"><a href="https://chausie.github.io/">Chausie</a></h2>
+  
+  <p class="subtitle">“Coding &amp; Studying”</p>
+  <button class="menu-toggle" type="button" aria-label="Main Menu" aria-expanded="false" tab-index="0">
+    <span class="icon icon-menu" aria-hidden="true"></span>
+  </button>
+
+  <nav class="site-menu collapsed">
+    <h2 class="offscreen">Main Menu</h2>
+    <ul class="menu-list">
+      
+      
+      
+      
+        <li class="menu-item
+          
+          
+           is-active">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="/tags/">标签</a>
+        </li>
+      
+    </ul>
+  </nav>
+  <nav class="social-menu collapsed">
+    <h2 class="offscreen">Social Networks</h2>
+    <ul class="social-list"><li class="social-item">
+          <a href="mailto:chausieBlog@163.com" title="Email" aria-label="Email">
+            <span class="icon icon-email" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//github.com/chausie" rel="me" title="GitHub" aria-label="GitHub">
+	    <span class="icon icon-github" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//weibo.com/2437147624" rel="me" title="Weibo" aria-label="Weibo">
+            <span class="icon icon-weibo" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="/images/qrcode.jpg" rel="me" title="Wechat" aria-label="Wechat">
+            <span class="icon icon-wechat" aria-hidden="true"></span>
+          </a>
+        </li></ul>
+  </nav>
+</header>
+
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">Hugo&#43;GitHub Pages搭建远端博客</h1>
+      <p class="post-meta">@Chausie · Jul 2, 2019 · 1 min read</p>
+    </header>
+    <article class="post-content">
+
+<h2 id="一-hugo安装-使用与配置">一、Hugo安装、使用与配置</h2>
+
+<h3 id="hugo安装">Hugo安装</h3>
+
+<ol>
+<li>下载并解压，
+<a href="https://github.com/gohugoio/hugo/releases" target="_blank">Hugo</a>（仅列举Windows）
+我使用的版本是hugo_extended_0.55.6_Windows-64bit.zip。</li>
+<li>解压后，还需再配置环境变量，在PATH中添加hugo.exe的路径,如：<code>D:\hugo\</code></li>
+<li>win+r输入cmd打开命令行提示符，输入并检验：</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$hugo version</code></pre></div>
+<h3 id="hugo使用">Hugo使用</h3>
+
+<p>一、 生成站点：使用Hugo快速生成站点，比如希望生成到 /path/路径：,创建文件夹名myblog的博客网站</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$hugo new site /path/myblog </code></pre></div>
+<p>站点目录：网站根目录</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">  · archetypes/    内容类型，在创建新内容是自动生成内容的配置，存放default.md
+  · data/          存放自定义模版，导入的toml文件（或json，yaml）
+  · content/       网站内容，使用markdown格式
+  · layouts/       网站的模板，决定内容如何呈现
+  · static/        存放css，js，fonts，media等，觉得网站外观
+    config.toml    包括baseurl, title, copyright等等网站参数。</code></pre></div>
+<p>二、 创建文章: 创建第一篇文章，放到 <code>post</code> 目录，方便之后生成聚合页面。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$cd /path/
+$hugo new post/first.md</code></pre></div>
+<h3 id="hugo配置">Hugo配置</h3>
+
+<p>一、 安装<a href="https://themes.gohugo.io/" target="_blank">主题</a>：没有主题是不行的。
+   到<a href="https://themes.gohugo.io/" target="_blank">主题库</a>挑一个心仪的主题，这里选择<code>Hyde</code>
+   创建themes目录</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$cd themes
+$git clone https://github.com/spf13/hyde.git</code></pre></div>
+<p>二、 运行Hugo：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server --theme<span style="color:#f92672">=</span>hyde --buildDrafts</code></pre></div>
+<p>浏览器里访问:<a href="http://localhost:1313">http://localhost:1313</a></p>
+
+<h2 id="二-部署到远端">二、部署到远端</h2>
+
+<p>前提：主机已经安装好git并有GitHub账号。你需要部署在 <code>GitHub Pages</code> 上，首先在GitHub上创建一个Repository，命名为：<code>username.github.io</code> （username替换为你的github用户名）。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt;cd /path/
+&gt;hugo --theme<span style="color:#f92672">=</span>hyde --baseUrl<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://username.github.io/&#34;</span></code></pre></div>
+<p>(值得注意的是：以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 <code>draft=true</code> 再重新生成。)</p>
+
+<p>在cmd输入：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$cd public
+$git init
+$git remote add origin https://github.com/username/username.github.io.git
+$git add -A
+$git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>
+$git push -u origin master</code></pre></div>
+<p>如果一切顺利，所有静态页面都会生成到 <code>public</code> 目录，将pubilc目录里所有文件 <code>push</code> 到刚创建的Repository的 <code>master</code> 分支。</p>
+
+<p>浏览器里访问：<a href="https://username.github.io/">https://username.github.io/</a></p>
+
+<h3 id="参考">参考</h3>
+
+<p>Hugo中文文档：<a href="https://www.gohugo.org/">https://www.gohugo.org/</a><br />
+GitHub Pages:<a href="https://pages.github.com/">https://pages.github.com/</a></p>
+</article>
+    <footer class="post-footer">
+      
+      <ul class="post-tags">
+        
+          <li><a href="/tags/hugo"><span class="tag">Hugo</span></a></li>
+        
+          <li><a href="/tags/github-pages"><span class="tag">GitHub Pages</span></a></li>
+        
+          <li><a href="/tags/%E5%8D%9A%E5%AE%A2"><span class="tag">博客</span></a></li>
+        
+      </ul>
+      
+      <p class="post-copyright">
+        
+      </p>
+    </footer>
+    
+      
+    
+  </section>
+  
+<footer class="site-footer">
+  <p>© 2017-2019 Chausie</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank" rel="noopener">Nuo</a>.</p>
+  
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@15.0.0/dist/smooth-scroll.min.js"></script>
+
+
+
+<script async src="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video.min.js"></script>
+
+
+
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    },
+  });
+</script>
+<script type="text/x-mathjax-config">
+  // Fix <code> tags after MathJax finishes running. This is a
+  // hack to overcome a shortcoming of Markdown. Discussion at
+  // https://github.com/mojombo/jekyll/issues/199
+  MathJax.Hub.Queue(() => {
+    MathJax.Hub.getAllJax().map(v => v.SourceElement().parentNode.className += ' has-jax');
+  });
+</script>
+
+
+
+<script src="/scripts/index.min.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('\/service-worker.js').then(function() {
+      console.log('[ServiceWorker] Registered');
+    });
+  }
+</script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
